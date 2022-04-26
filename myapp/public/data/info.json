@@ -1,0 +1,6 @@
+{
+    "Messi": {"Games": 968, "Goals": 762, "Club": "PSG", "Nationality": "Argentina", "Age": 34},
+    "Ronaldo": {"Games": 1116, "Goals": 811, "Club": "Manchester United", "Nationality": "Portuguese", "Age": 37},
+    "Neymar": {"Games": 578, "Goals": 344, "Club": "PSG", "Nationality": "Brazilian", "Age": 30},
+    "Salah": {"Games": 579, "Goals": 277, "Club": "Liverpool", "Nationality": "Egyptian", "Age": 29}
+}
