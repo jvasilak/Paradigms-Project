@@ -14,3 +14,27 @@ indexButton.addEventListener('click', function(e) {
   console.log('Index button was clicked');
   location.href = myURL.concat("/");
 });
+
+const messiButton = document.getElementById('LMButton');
+messiButton.addEventListener('click', function(e) {
+  console.log('Messi button was clicked');
+  location.href = myURL.concat("/messi");
+});
+
+const ronaldoButton = document.getElementById('CRButton');
+ronaldoButton.addEventListener('click', function(e) {
+  console.log('Ronaldo button was clicked');
+  location.href = myURL.concat("/ronaldo");
+});
+
+const neymarButton = document.getElementById('NButton');
+neymarButton.addEventListener('click', function(e) {
+  console.log('Neymar button was clicked');
+  location.href = myURL.concat("/neymar");
+});
+
+const salahButton = document.getElementById('MSButton');
+salahButton.addEventListener('click', function(e) {
+  console.log('Salah button was clicked');
+  location.href = myURL.concat("/salah");
+});
