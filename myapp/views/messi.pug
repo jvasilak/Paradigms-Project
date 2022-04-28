@@ -17,7 +17,8 @@ block content
     script(src='javascripts/getPlayerInfo.js')
     p Club: 
       script.
-        document.write(getClub("Messi"));
+        const club = fulfillPromise(getClub, "Messi");
+        club.then(document.write(club));
     p Nationality:
     p Age:
     p Games Played:
