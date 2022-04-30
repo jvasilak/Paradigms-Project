@@ -15,10 +15,14 @@ block content
   .main
     h3 Lionel Messi
     script(src='javascripts/getPlayerInfo.js')
-    p Club: 
+    p#club Club: 
       script.
-        const club = fulfillPromise(getClub, "Messi");
-        club.then(document.write(club));
+        //document.write(getClub("Messi"));
+        //document.write(fulfillPromise(getClub, "Messi"));
+        getClub("Messi").then(function(data) {
+          document.write(data);
+        });
+        //getClub("Messi");s
     p Nationality:
     p Age:
     p Games Played:
