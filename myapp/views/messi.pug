@@ -17,11 +17,11 @@ block content
     script(src='javascripts/getPlayerInfo.js')
     p#club Club: 
       script.
-        //document.write(getClub("Messi"));
+        document.write(loadPage("Messi"));
         //document.write(fulfillPromise(getClub, "Messi"));
-        getClub("Messi").then(function(data) {
-          document.write(data);
-        });
+        //getClub("Messi").then(function(data) {
+          //document.write(data);
+        //});
         //getClub("Messi");s
     p Nationality:
     p Age:

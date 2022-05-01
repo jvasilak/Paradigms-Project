@@ -1,6 +1,16 @@
 const infoFile = "/data/info.json";
+let club = null;
+
+
+function loadPage(name) {
+    let clubPromise = getClub(name);//.then(function(data) {club = data; console.log(club);});
+    console.log(clubPromise);
+    let r = club;
+    return clubPromise.PromiseResult;
+}
 //let found = false;
 async function getClub(name) {
+    /*
     let club = null;
     let found = false;
     let x = new XMLHttpRequest();
@@ -15,27 +25,23 @@ async function getClub(name) {
                 const json = JSON.parse(response);
                 club = json[name]["Club"];
                 console.log("Inner: " + club);
-                //return club;
                 found = true;
-                document.write(club);
             }
         }
     }
     x.send(infoFile);
-    return club;
-    //if(found) {return club;}
-    //console.log(club);
-    //return club;
-    //const json = JSON.parse(response);
-    //const club = json[name]["Club"];
-    //return club;
-    /*let response = await fetch("/data/info.json");
+    return club;*/
+    let response = await fetch("/data/info.json");
     let data = await response.text();
     //console.log(typeof(data));
     let json = JSON.parse(data);
     let club = json[name]["Club"];
-    const p = Promise.resolve(club);
-    return p;*/
+    //const p = Promise.resolve(club);
+    return club;
+}
+
+function returnValue(value) {
+    return value;
 }
 
 function fulfillPromise(func, name) {
