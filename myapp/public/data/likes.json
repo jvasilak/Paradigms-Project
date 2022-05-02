@@ -1,6 +1,1 @@
-{
-    "Messi": {"Likes": 0, "Dislikes": 0},
-    "Ronaldo": {"Likes": 0, "Dislikes": 0},
-    "Neymar": {"Likes": 0, "Dislikes": 0},
-    "Salah": {"Likes": 0, "Dislikes": 0}
-}
+{"Messi":{"Likes":9,"Dislikes":3},"Ronaldo":{"Likes":3,"Dislikes":3},"Neymar":{"Likes":2,"Dislikes":6},"Salah":{"Likes":4,"Dislikes":1}}

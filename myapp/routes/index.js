@@ -17,12 +17,14 @@ router.get('/messi', function(req, res, next) {
   let likeData = JSON.parse(fs.readFileSync(__dirname + "/../public/data/likes.json"));
   // Like
   if(req.query.vote == 1) {
-    likeData["Messi"]["Likes"] = "1";
+    likeData["Messi"]["Likes"] += 1;
   } 
   // Dislike
   else if(req.query.vote == 2) {
-    likeData["Messi"]["Dislikes"] = "1";
+    likeData["Messi"]["Dislikes"] += 1;
   }
+  let likeJSON = JSON.stringify(likeData);
+  fs.writeFileSync(__dirname + "/../public/data/likes.json", likeJSON);
 
   let infoData = JSON.parse(fs.readFileSync(__dirname + "/../public/data/info.json"));
   let sendData = infoData["Messi"];
@@ -33,21 +35,66 @@ router.get('/messi', function(req, res, next) {
 });
 
 router.get('/ronaldo', function(req, res, next) {
-  let data = fs.readFileSync(__dirname + "/../public/data/info.json");
-  let jsonData = JSON.parse(data);
-  res.render('ronaldo', jsonData["Ronaldo"]);
+  let likeData = JSON.parse(fs.readFileSync(__dirname + "/../public/data/likes.json"));
+  // Like
+  if(req.query.vote == 1) {
+    likeData["Ronaldo"]["Likes"] += 1;
+  } 
+  // Dislike
+  else if(req.query.vote == 2) {
+    likeData["Ronaldo"]["Dislikes"] += 1;
+  }
+  let likeJSON = JSON.stringify(likeData);
+  fs.writeFileSync(__dirname + "/../public/data/likes.json", likeJSON);
+
+  let infoData = JSON.parse(fs.readFileSync(__dirname + "/../public/data/info.json"));
+  let sendData = infoData["Ronaldo"];
+  sendData["Likes"] = likeData["Ronaldo"]["Likes"];
+  sendData["Dislikes"] = likeData["Ronaldo"]["Dislikes"];
+
+  res.render('ronaldo', sendData);
 });
 
 router.get('/neymar', function(req, res, next) {
-  let data = fs.readFileSync(__dirname + "/../public/data/info.json");
-  let jsonData = JSON.parse(data);
-  res.render('neymar', jsonData["Neymar"]);
+  let likeData = JSON.parse(fs.readFileSync(__dirname + "/../public/data/likes.json"));
+  // Like
+  if(req.query.vote == 1) {
+    likeData["Neymar"]["Likes"] += 1;
+  } 
+  // Dislike
+  else if(req.query.vote == 2) {
+    likeData["Neymar"]["Dislikes"] += 1;
+  }
+  let likeJSON = JSON.stringify(likeData);
+  fs.writeFileSync(__dirname + "/../public/data/likes.json", likeJSON);
+
+  let infoData = JSON.parse(fs.readFileSync(__dirname + "/../public/data/info.json"));
+  let sendData = infoData["Neymar"];
+  sendData["Likes"] = likeData["Neymar"]["Likes"];
+  sendData["Dislikes"] = likeData["Neymar"]["Dislikes"];
+
+  res.render('neymar', sendData);
 });
 
 router.get('/salah', function(req, res, next) {
-  let data = fs.readFileSync(__dirname + "/../public/data/info.json");
-  let jsonData = JSON.parse(data);
-  res.render('salah', jsonData["Salah"]);
+  let likeData = JSON.parse(fs.readFileSync(__dirname + "/../public/data/likes.json"));
+  // Like
+  if(req.query.vote == 1) {
+    likeData["Salah"]["Likes"] += 1;
+  } 
+  // Dislike
+  else if(req.query.vote == 2) {
+    likeData["Salah"]["Dislikes"] += 1;
+  }
+  let likeJSON = JSON.stringify(likeData);
+  fs.writeFileSync(__dirname + "/../public/data/likes.json", likeJSON);
+
+  let infoData = JSON.parse(fs.readFileSync(__dirname + "/../public/data/info.json"));
+  let sendData = infoData["Salah"];
+  sendData["Likes"] = likeData["Salah"]["Likes"];
+  sendData["Dislikes"] = likeData["Salah"]["Dislikes"];
+
+  res.render('salah', sendData);
 });
 
 module.exports = router;
