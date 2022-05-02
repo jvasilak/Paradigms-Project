@@ -14,22 +14,15 @@ block content
 
   .main
     h3 Lionel Messi
-    script(src='javascripts/getPlayerInfo.js')
-    p#club Club: 
-      script.
-        document.write(loadPage("Messi"));
-        //document.write(fulfillPromise(getClub, "Messi"));
-        //getClub("Messi").then(function(data) {
-          //document.write(data);
-        //});
-        //getClub("Messi");s
-    p Nationality:
-    p Age:
-    p Games Played:
-    p Goals:
+    p Club: #{Club}
+    p Nationality: #{Nationality}
+    p Age: #{Age} 
+    p Games Played: #{Games}
+    p Goals: #{Goals}
     img(src='images/Messi.jpg' alt='Lionel Messi' style='width:500px;height:700px;')
     br
-    p Likes:
+    p Likes: #{Likes}
     p Dislikes:
     button#likeButton Like
     button#dislikeButton Dislike
+    script(src='javascripts/likes.js')
