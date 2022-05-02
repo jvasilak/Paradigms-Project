@@ -1,0 +1,38 @@
+Q1: What is Lionel Messi’s nationality? 
+	Answer 1: Argentina
+	Answer 2: Italy
+	Answer 3: Spain
+	Answer 4: Portugal
+
+Q2: Where does Ronaldo play currently?
+	Answer 1: Manchester City
+	Answer 2: Newcastle United
+	Answer 3: Manchester United
+	Answer 4: Leicester City
+
+Q3: How old is Neymar?
+	Answer 1: 33
+	Answer 2: 27
+	Answer 3: 29
+	Answer 4: 30
+
+Q4: How many goals has Salah scored in his career?
+	Answer 1: 330
+	Answer 2: 277
+	Answer 3: 199
+	Answer 4: 402
+
+Q4: How many goals has Salah scored in his career?
+	Answer 1: 330
+	Answer 2: 277
+	Answer 3: 199
+	Answer 4: 402
+
+Q4: Who has the most games played?
+	Answer 1: Ronaldo
+	Answer 2: Salah
+	Answer 3: Messi
+	Answer 4: Neymar
+
+
+	
