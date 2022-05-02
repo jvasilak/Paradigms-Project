@@ -1,0 +1,57 @@
+extends layout
+
+block content
+  .topnav
+    h1 Soccer Zoom - A Place for Soccer Players to Meet
+    button#homeButton Home
+    button#NButton Neymar
+    button#MSButton Salah
+    button#CRButton Ronaldo
+    button#LMButton Messi 
+    button#QuizButton Quiz
+    button#TeamButton Team
+    script(src='javascripts/client.js')
+
+  .main
+    p What is Lionel Messi's nationality?
+    select#Q1
+        option(value='0') -- Select --
+        option(value='1') Argentina
+        option(value='2') Italy
+        option(value='3') Spain
+        option(value='4') Portugal
+
+    p Where does Ronaldo play currently?
+    select#Q2
+        option(value='0') -- Select --
+        option(value='1') Manchester City 
+        option(value='2') Newcastle United
+        option(value='3') Manchester United
+        option(value='4') Leicester City
+
+    p How old is Neymar?
+    select#Q3
+        option(value='0') -- Select --
+        option(value='1') 33
+        option(value='2') 27
+        option(value='3') 29
+        option(value='4') 30
+
+    p How many goals has Salah scored in his career?
+    select#Q4
+        option(value='0') -- Select --
+        option(value='1') 330
+        option(value='2') 277
+        option(value='3') 199
+        option(value='4') 402
+
+    p Who has the most games played?
+    select#Q5
+        option(value='0') -- Select --
+        option(value='1') Ronaldo
+        option(value='2') Salah
+        option(value='3') Messi
+        option(value='4') Neymar
+    p
+    button#SubmitButton Submit
+    script(src='javascripts/submit.js')

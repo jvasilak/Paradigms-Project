@@ -12,6 +12,19 @@ router.get('/team', function(req, res, next) {
   res.render('team', { title: 'Team View' });
 });
 
+router.get('/quiz', function(req, res, next) {
+  res.render('quiz', { title: 'Quiz' })
+});
+
+router.get('/success', function(req, res, next) {
+  res.render('success', { title: 'Success'})
+});
+
+router.get('/failure', function(req, res, next) {
+  res.render('failure', { title: 'Failure'})
+});
+
+
 // Get player view pages
 router.get('/messi', function(req, res, next) {
   let likeData = JSON.parse(fs.readFileSync(__dirname + "/../public/data/likes.json"));

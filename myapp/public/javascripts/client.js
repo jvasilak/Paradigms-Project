@@ -12,7 +12,7 @@ TeamButton.addEventListener('click', function(e) {
 const QuizButton = document.getElementById('QuizButton');
 QuizButton.addEventListener('click', function(e) {
   console.log('Team View button was clicked');
-  location.href = myURL.concat("/team");
+  location.href = myURL.concat("/quiz");
 });
 
 const indexButton = document.getElementById('homeButton');
